@@ -1,7 +1,7 @@
 {
   "name": "matchacss",
   "version": "0.0.1",
-  "description": "",
+  "description": "Matcha is a minimal CSS design system and framework to try and influence the use of the Cascade in CSS and promote the use of semantic HTML.",
   "main": "dist/index.css",
   "files": [
     "dist"
@@ -28,10 +28,8 @@
   ],
   "author": "Sepp Wikramaratna-Clarke",
   "license": "MIT",
-  "dependencies": {
-    "rimraf": "^3.0.2"
-  },
   "devDependencies": {
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "rimraf": "^3.0.2"
   }
 }
