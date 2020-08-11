@@ -589,15 +589,17 @@ h3 {
   --white: #f6f6f6;
   --pureWhite: #ffffff;
   /* Colors */
-  --green: #60b385;
-  --lightGreen: #91c7a1;
-  --orange: #daa520;
-  --yellow: #eeee88;
+  --darkGreen: #335533;
+  --green: #32a65a;
+  --lightGreen: #5acca6;
+  --orange: #dab820;
+  --yellow: #ecec75;
+  --lightYellow: #f6f6b8;
   --lightRed: #ee5252;
   --red: #dd382c;
   --darkRed: #992b2b;
   --lightBlue: #87ceeb;
-  --blue: #304fac;
+  --blue: #909fcc;
   --darkBlue: #323b55;
   --darkerBlue: #23293a;
   --primary: var(--lightGreen);
@@ -832,7 +834,6 @@ button:focus {
 
 input[type=submit],
 button {
-  --buttonBG: var(--btnBackground);
   width: auto;
   appearance: none;
   color: var(--btnTextColor);
@@ -856,37 +857,37 @@ button:active {
 }
 input[type=submit][data-primary],
 button[data-primary] {
-  --buttonBG: var(--primary);
+  --btnBackground: var(--primary);
   --btnTextColor: var(--lightGray);
 }
 input[type=submit][data-cancel],
 button[data-cancel] {
-  --buttonBG: var(--cancel);
+  --btnBackground: var(--cancel);
   --btnTextColor: var(--lightGray);
 }
 input[type=submit][data-info],
 button[data-info] {
-  --buttonBG: var(--info);
+  --btnBackground: var(--info);
   --btnTextColor: var(--lightGray);
 }
 input[type=submit][data-success],
 button[data-success] {
-  --buttonBG: var(--success);
+  --btnBackground: var(--success);
   --btnTextColor: var(--lightGray);
 }
 input[type=submit][data-danger],
 button[data-danger] {
-  --buttonBG: var(--danger);
+  --btnBackground: var(--danger);
   --btnTextColor: var(--lightGray);
 }
 input[type=submit][data-attention],
 button[data-attention] {
-  --buttonBG: var(--attention);
+  --btnBackground: var(--attention);
   --btnTextColor: var(--lightGray);
 }
 input[type=submit]:disabled,
 button:disabled {
-  --buttonBG: var(--gray);
+  --btnBackground: var(--gray);
   opacity: 0.6;
   box-shadow: var(--shadow-1);
 }
