@@ -2,7 +2,7 @@
   "name": "matchacss",
   "version": "0.0.1",
   "description": "Matcha is a minimal CSS design system and framework to try and influence the use of the Cascade in CSS and promote the use of semantic HTML.",
-  "main": "dist/index.css",
+  "main": "dist/macha.css",
   "files": [
     "dist"
   ],
