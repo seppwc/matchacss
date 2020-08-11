@@ -4,8 +4,7 @@
   "description": "",
   "main": "dist/index.css",
   "files": [
-    "*.css",
-    "*.css.map"
+    "dist"
   ],
   "scripts": {
     "build": "sass src/index.scss dist/index.css",
