@@ -2,7 +2,7 @@
   "name": "matchacss",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.css",
   "scripts": {
     "build": "sass src/index.scss dist/index.css",
     "build:watch": "sass --watch src/index.scss dist/index.css",
@@ -10,9 +10,21 @@
     "build:all": "npm run build && npm run build:themes",
     "prebuild": "rimraf dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phl3bas/MatchaCSS"
+  },
+  "keywords": [
+    "css",
+    "theme",
+    "classless",
+    "web-design",
+    "minimal",
+    "default",
+    "reset"
+  ],
+  "author": "Sepp Wikramaratna-Clarke",
+  "license": "MIT",
   "dependencies": {
     "rimraf": "^3.0.2"
   },
