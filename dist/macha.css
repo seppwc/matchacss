@@ -590,12 +590,12 @@ h3 {
   --pureWhite: #ffffff;
   /* Colors */
   --green: #60b385;
-  --lightGreen: #62bdbd;
+  --lightGreen: #91c7a1;
   --orange: #daa520;
   --yellow: #eeee88;
-  --lightRed: #ff7948;
-  --red: #dd5b2c;
-  --darkRed: #9b3b18;
+  --lightRed: #ee5252;
+  --red: #dd382c;
+  --darkRed: #992b2b;
   --lightBlue: #87ceeb;
   --blue: #304fac;
   --darkBlue: #323b55;
@@ -618,12 +618,12 @@ h3 {
   --h4: 1.563em;
   --h5: 1.173em;
   --smallText: 0.8em;
-  --buttonBackground: var(--default);
+  --btnBackground: var(--default);
   --btnTextColor: var(--black);
-  --buttonPadding: 6px 25px;
+  --btnPadding: 6px 25px;
+  --borderColor: var(--gray);
   --border: solid 2px var(--lineColor);
-  --cardBg: var(--white);
-  --lineColor: var(--gray);
+  --cardBackground: var(--white);
   --containerPadding: 2.25%;
   --radius: 5px;
   --headerBackground: var(--darkerGray);
@@ -663,11 +663,11 @@ blockquote a:visited {
 }
 
 blockquote {
-  --sideColor: var(--info);
+  --quoteColor: var(--info);
   margin: 2em 0;
   padding: 2em;
   border-radius: var(--radius);
-  background: var(--cardBg);
+  background: var(--cardBackground);
   position: relative;
   max-width: 700px;
   box-shadow: var(--shadow-3);
@@ -678,7 +678,7 @@ blockquote::before {
   position: absolute;
   height: 100%;
   width: 1.2%;
-  background: var(--sideColor);
+  background: var(--quoteColor);
   top: 0;
   left: 0;
 }
@@ -832,14 +832,14 @@ button:focus {
 
 input[type=submit],
 button {
-  --buttonBG: var(--buttonBackground);
+  --buttonBG: var(--btnBackground);
   width: auto;
   appearance: none;
   color: var(--btnTextColor);
   text-transform: uppercase;
   background-color: var(--buttonBG);
   border: none;
-  padding: var(--buttonPadding);
+  padding: var(--btnPadding);
   border-radius: 3px;
   box-shadow: var(--shadow-2);
   transition: box-shadow 200ms ease, transform 200ms ease;
@@ -927,7 +927,6 @@ td {
 
 table {
   width: 100%;
-  min-width: 500px;
   text-align: center;
   border-radius: var(--tableRadius);
   color: var(--black);
@@ -957,11 +956,12 @@ table thead th {
 }
 
 .card {
+  --cardShadow: var(--shadow-4);
   margin: 5px;
   padding: 2em;
   border-radius: var(--radius);
-  background: var(--cardBg);
-  box-shadow: var(--shadow-4);
+  background: var(--cardBackground);
+  box-shadow: var(--cardShadow);
 }
 
 .card > *:first-child {
@@ -1191,4 +1191,4 @@ table thead th {
   padding: 2em;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=macha.css.map */
