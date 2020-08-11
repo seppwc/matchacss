@@ -1,5 +1,5 @@
 @mixin Button {
-  --buttonBackground: var(--default);
+  --btnBackground: var(--default);
   --btnTextColor: var(--black);
-  --buttonPadding: 6px 25px;
+  --btnPadding: 6px 25px;
 }

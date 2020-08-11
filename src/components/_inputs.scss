@@ -25,7 +25,7 @@ button:focus {
 
 input[type='submit'],
 button {
-  --buttonBG: var(--buttonBackground);
+  --buttonBG: var(--btnBackground);
 
   width: auto;
   appearance: none;
@@ -33,7 +33,7 @@ button {
   text-transform: uppercase;
   background-color: var(--buttonBG);
   border: none;
-  padding: var(--buttonPadding);
+  padding: var(--btnPadding);
   border-radius: 3px;
   box-shadow: var(--shadow-2);
   transition: box-shadow 200ms ease, transform 200ms ease;
