@@ -1,0 +1,5 @@
+@mixin Header {
+  --headerBackground: var(--darkerGray);
+  --headerTextColor: var(--white);
+  --headerHeight: 3rem;
+}

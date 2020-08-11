@@ -1,0 +1,25 @@
+.card {
+  margin: 5px;
+  padding: 2em;
+  border-radius: var(--radius);
+  background: var(--cardBg);
+  box-shadow: var(--shadow-4);
+}
+
+.card > *:first-child {
+  margin-top: 0;
+}
+.card > *:last-child {
+  margin-bottom: 0;
+}
+
+.card > img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 1em 0;
+}
+
+.card.grid > * {
+  margin: 0;
+}

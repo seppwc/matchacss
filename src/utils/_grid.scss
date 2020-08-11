@@ -1,0 +1,34 @@
+.auto-grid {
+  --auto-grid-min-size: 18em;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+
+.grid {
+  --gridCols: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--gridCols), 1fr);
+  grid-gap: 1rem;
+}
+
+.stretch {
+  grid-column: 1 / -1;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+@for $i from 1 to 13 {
+  .col-#{$i} {
+    --gridCols: #{$i};
+  }
+  .span-#{$i} {
+    grid-column: span #{$i};
+  }
+  .start-#{$i} {
+    grid-column-start: #{$i};
+  }
+}

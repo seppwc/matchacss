@@ -1,0 +1,24 @@
+@use './colors/defaultColorVars';
+@use './colors/defaultColorIntentions';
+@use './body/bodyVars';
+@use './typography/typographyVars';
+@use './button/buttonVars';
+@use './containers/containerVars';
+@use './header/headerVars';
+@use './input/inputVars';
+@use './shadows/shadowVars';
+@use './tables/tableVars';
+
+:root {
+  @include defaultColorVars.Colors;
+  @include defaultColorIntentions.ColorIntentions;
+  @include bodyVars.BodyVars;
+  @include typographyVars.Fonts;
+  @include typographyVars.Headings;
+  @include buttonVars.Button;
+  @include containerVars.Containers;
+  @include headerVars.Header;
+  @include inputVars.Input;
+  @include shadowVars.Shadows;
+  @include tableVars.Table;
+}

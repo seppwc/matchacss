@@ -1,0 +1,7 @@
+@mixin Containers {
+  --border: solid 2px var(--lineColor);
+  --cardBg: var(--white);
+  --lineColor: var(--gray);
+  --containerPadding: 2.25%;
+  --radius: 5px;
+}

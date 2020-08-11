@@ -1,0 +1,5 @@
+@mixin BodyVars {
+  --background: var(--lightGray);
+  --textColor: var(--black);
+  --linkColor: var(--primary);
+}

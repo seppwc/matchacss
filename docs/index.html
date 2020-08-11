@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/dist/index.css" />
+    <link rel="stylesheet" href="/dist/themes/dark.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/ocean.min.css"
+    />
+    <meta name="theme-color" content="#fafafa" />
+    <title>Matcha - Examples</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <header id="navigation">
+      <h1 class="fake-logo">Matcha</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/">Docs</a>
+        <a href="/">Github</a>
+      </nav>
+      <div
+        class="flex"
+        style="
+          flex-direction: column;
+          align-items: flex-start;
+          position: fixed;
+          top: 4rem;
+          right: 0;
+          width: 70px;
+          gap: 0;
+        "
+      >
+        <button id="light">
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0"
+            y="0"
+            height="20"
+            viewBox="0 0 384 384"
+            xml:space="preserve"
+            style="pointer-events: none;"
+          >
+            <path
+              d="M101.488,78.864L78.864,56.24c-6.24-6.248-16.384-6.248-22.624,0c-6.248,6.248-6.248,16.376,0,22.624l22.624,22.624 c3.12,3.128,7.216,4.688,11.312,4.688c4.096,0,8.192-1.56,11.312-4.688C107.736,95.24,107.736,85.112,101.488,78.864z"
+            />
+            <path
+              d="M48,176H16c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h32c8.832,0,16-7.168,16-16C64,183.168,56.832,176,48,176z"
+            />
+            <path
+              d="M101.488,282.512c-6.24-6.248-16.384-6.248-22.624,0L56.24,305.136c-6.248,6.248-6.248,16.376,0,22.624 c3.12,3.128,7.216,4.688,11.312,4.688s8.192-1.56,11.312-4.688l22.624-22.624C107.736,298.888,107.736,288.76,101.488,282.512z"
+            />
+            <path
+              d="M192,320c-8.832,0-16,7.168-16,16v32c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-32C208,327.168,200.832,320,192,320 z"
+            />
+            <path
+              d="M327.76,305.136l-22.624-22.624c-6.24-6.248-16.384-6.248-22.624,0c-6.248,6.248-6.248,16.376,0,22.624l22.624,22.624 c3.12,3.128,7.216,4.688,11.312,4.688s8.192-1.56,11.312-4.688C334.008,321.512,334.008,311.384,327.76,305.136z"
+            />
+            <path
+              d="M368,176h-32c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h32c8.832,0,16-7.168,16-16C384,183.168,376.832,176,368,176 z"
+            />
+            <path
+              d="M327.76,56.24c-6.24-6.248-16.384-6.248-22.624,0l-22.624,22.624c-6.248,6.248-6.248,16.376,0,22.624 c3.12,3.128,7.216,4.688,11.312,4.688s8.192-1.56,11.312-4.688l22.624-22.624C334.008,72.616,334.008,62.488,327.76,56.24z"
+            />
+            <path
+              d="M192,0c-8.832,0-16,7.168-16,16v32c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16V16C208,7.168,200.832,0,192,0z"
+            />
+            <path
+              d="M192,88c-57.344,0-104,46.656-104,104s46.656,104,104,104s104-46.656,104-104S249.344,88,192,88z M192,264 c-39.696,0-72-32.304-72-72s32.304-72,72-72s72,32.304,72,72S231.696,264,192,264z"
+            />
+          </svg>
+        </button>
+        <button id="dark">
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0"
+            y="0"
+            height="20"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+            style="pointer-events: none;"
+          >
+            <path
+              d="M507.681,209.011c-1.297-6.991-7.324-12.111-14.433-12.262c-7.104-0.122-13.347,4.711-14.936,11.643 c-15.26,66.497-73.643,112.94-141.978,112.94c-80.321,0-145.667-65.346-145.667-145.666c0-68.335,46.443-126.718,112.942-141.976 c6.93-1.59,11.791-7.826,11.643-14.934c-0.149-7.108-5.269-13.136-12.259-14.434C287.546,1.454,271.735,0,256,0 C187.62,0,123.333,26.629,74.98,74.981C26.628,123.333,0,187.62,0,256s26.628,132.667,74.98,181.019 C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.981C485.372,388.667,512,324.38,512,256 C512,240.278,510.546,224.469,507.681,209.011z"
+            />
+          </svg>
+        </button>
+        <button
+          id="styles"
+          style="font-size: 12px; text-align: left; padding: 5px 10px;"
+        >
+          Remove Matcha
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <h2>Matcha</h2>
+
+      <h3>Minimal CSS Design System</h3>
+
+      <p>
+        Matcha is a minimal CSS design system and framework to try and infuence
+        the use of the
+        <i>Cascade</i> in CSS and promote the use of sematic HTML.
+      </p>
+
+      <p>
+        It provides a hard override of base CSS element styling (using
+        normalize.css as a starting point), while also providing the user the
+        ability to override any styles themselves using normal css (by only
+        styling base elements any classes added to elements will default to
+        highest specificity).
+      </p>
+
+      <p>
+        Matcha takes a style-first stance in a framework, while it does provide
+        some utilities for layout (grid/flexbox) it mostly leaves top level
+        layout to the user
+      </p>
+
+      <p>
+        Matcha is designed for quick prototyping and extendibility, either write
+        your own classes to override styles or modify/add your own the design
+        token to create your own themes. Dark modes are as simple as changing a
+        class on the body, in fact the dark mode on this page only took only 7
+        lines of css to write, due to Matcha's design token flow;
+      </p>
+
+      <hr />
+
+      <h2 style="text-decoration: underline;">Base Styles</h2>
+
+      <h3>Text and Links</h3>
+
+      <pre>
+        <code class="html">
+          &lt;p&gt; 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. &lt;a href="#"&gt;Suscipit qui harum
+            eveniet&lt;/a&gt; , illum adipisci a temporibus aliquam dolores ut odio.
+            Voluptate excepturi error natus accusantium &lt;a href="#df"&gt;corrupti
+            iste perspiciatis ipsum velit?&lt;/a&gt; 
+          &lt;/p&gt;
+        </code>
+      </pre>
+
+      <div class="card">
+        <p id="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <a href="#">Suscipit qui harum eveniet</a> , illum adipisci a
+          temporibus aliquam dolores ut odio. Voluptate excepturi error natus
+          accusantium
+          <a href="#df">corrupti iste perspiciatis ipsum velit?</a>
+        </p>
+      </div>
+
+      <hr id="headings" />
+
+      <h3>Headings</h3>
+
+      <pre>
+        <code class="html">
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;h2&gt;Heading 2&lt;/h2&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h4&gt;Heading 4&lt;/h4&gt;
+          &lt;h5&gt;Heading 5&lt;/h5&gt;
+        </code>
+      </pre>
+
+      <div class="card">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+      </div>
+
+      <hr id="blockquote" />
+
+      <h3>Blockquotes</h3>
+
+      <pre>
+        <code class="html">
+          &lt;blockquote&gt;
+            &lt;strong&gt;Block quotes - &lt;/strong&gt; consectetur adipisicing elit. Dolor
+            numquam quasi fugiat,
+            &lt;a href="#zzzz"&gt;Suscipit qui harum eveniet&lt;/a&gt; nobis ea ullam vero iusto,
+            magnam soluta rerum adipisci sint expedita. Quis tempore provident
+            quisquam architecto ad reiciendis?
+          &lt;/blockquote&gt;
+        </code>
+      </pre>
+
+      <blockquote>
+        <strong>Block quotes - </strong> consectetur adipisicing elit. Dolor
+        numquam quasi fugiat,
+        <a href="#asd">Suscipit qui harum eveniet</a> nobis ea ullam vero iusto,
+        magnam soluta rerum adipisci sint expedita. Quis tempore provident
+        quisquam architecto ad reiciendis?
+      </blockquote>
+
+      <hr id="lists" />
+
+      <h3>Lists</h3>
+
+      <pre>
+        <code class="html">
+  
+          &lt;h5>Ordered Lists&lt;/h5&gt;
+          &lt;ol>
+            &lt;li>item one&lt;/li&gt;
+            &lt;li>item two&lt;/li&gt;
+            &lt;li>item three&lt;/li&gt;
+          &lt;/ol&gt;
+
+          &lt;h5>Unordered Lists&lt;/h5&gt;
+          &lt;ul&gt;
+            &lt;li>item one&lt;/li&gt;
+            &lt;li>item two&lt;/li&gt;
+            &lt;li>item three&lt;/li&gt;
+          &lt;/ul&gt;
+
+        </code>
+      </pre>
+
+      <div class="flex flex-around card">
+        <div>
+          <h5>Ordered Lists</h5>
+          <ol>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+            <ol>
+              <li>item one</li>
+              <li>item two</li>
+              <li>item three</li>
+            </ol>
+          </ol>
+        </div>
+
+        <div>
+          <h5>Unordered Lists</h5>
+          <ul>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+            <ul>
+              <li>item one</li>
+              <li>item two</li>
+              <li>item three</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <hr id="buttons" />
+      <h3>Buttons</h3>
+      <pre>
+        <code class="html">
+          &lt;button&gt;Button&lt;button&gt;
+          &lt;button&gt;Button with Long text&lt;/button&gt;
+          &lt;button&gt;&xrarr;&lt;/button&gt;
+          &lt;input disabled type="submit" value="Disabled" /&gt;
+          &lt;button data-primary&gt;Primary&lt;/button&gt;
+          &lt;button data-cancel&gt;Cancel&lt;/button&gt;
+          &lt;button data-info&gt;Info&lt;/button&gt;
+          &lt;button data-attention&gt;Attention&lt;/button&gt;
+          &lt;button data-success&gt;Success&lt;/button&gt;
+          &lt;button data-danger&gt;Danger&lt;/button&gt;
+          &lt;button data-small&gt;Small&lt;/button&gt;
+        </code>
+      </pre>
+
+      <div class="card">
+        <button>Button</button>
+        <button>Button with Long text</button>
+        <button>&xrarr;</button>
+        <input disabled type="submit" value="Disabled" />
+        <button data-primary>Primary</button>
+        <button data-cancel>Cancel</button>
+        <button data-info>Info</button>
+        <button data-attention>Attention</button>
+        <button data-success>Success</button>
+        <button data-danger>Danger</button>
+        <button data-small>Small</button>
+      </div>
+
+      <hr id="forms" />
+      <h3>Forms</h3>
+      <pre>
+        <code class="html">
+          &lt;form class="card"&gt;
+            &lt;h3>Contact&lt;/h3&gt;
+
+            &lt;fieldset&gt;
+              &lt;label for="text">Text&lt;/label&gt;
+                &lt;input
+                  id="text"
+                  type="text"
+                  placeholder="Sepp Wikramaratna-Clarke"
+                /&gt;
+            &lt;/fieldset&gt;
+
+            &lt;fieldset&gt;
+              &lt;label for="email">Email&lt;/label&gt;
+              &lt;input id="email" type="email" placeholder="email@email.com" /&gt;
+            &lt;/fieldset&gt;   
+
+            &lt;fieldset&gt;
+              &lt;label for="select">Select&lt;/label&gt;
+              &lt;select name="" id="select"&gt;
+                &lt;option disabled value="value-one">value one&lt;/option&gt;
+                &lt;option value="value-one">value two&lt;/option&gt;
+                &lt;option value="value-one">value three&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/fieldset&gt;
+
+            &lt;fieldset&gt;
+              &lt;label for="textarea">Textarea&lt;/label&gt;
+              &lt;textarea id="textarea" placeholder="text area">&lt;/textarea&gt;
+            &lt;/fieldset&gt;
+
+            &lt;fieldset&gt;
+              &lt;input type="submit" value="Submit" /&gt;
+            &lt;/fieldset&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>
+
+      <div class="card">
+        <form>
+          <h3>Contact</h3>
+
+          <fieldset>
+            <label for="text">Text</label>
+            <input
+              id="text"
+              type="text"
+              placeholder="Sepp Wikramaratna-Clarke"
+            />
+          </fieldset>
+
+          <fieldset>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="email@email.com" />
+          </fieldset>
+
+          <fieldset>
+            <label for="select">Select</label>
+            <select name="" id="select">
+              <option disabled value="value-one">value one</option>
+              <option value="value-one">value two</option>
+              <option value="value-one">value three</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="textarea">Textarea</label>
+            <textarea id="textarea" placeholder="text area"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+
+      <hr id="tables" />
+
+      <h3>Tables</h3>
+
+      <pre><code class="html">
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;name&lt;/th&gt;
+              &lt;th&gt;email&lt;/th&gt;
+              &lt;th&gt;age&lt;/th&gt;
+              &lt;th&gt;role&lt;/th&gt;
+              &lt;th&gt;earnings&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Sepp&lt;/td&gt;
+              &lt;td&gt;info@builtbysepp.dev&lt;/td&gt;
+              &lt;td&gt;33&lt;/td&gt;
+              &lt;td&gt;Senior Developer&lt;/td&gt;
+              &lt;td&gt;£22.000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Henry&lt;/td&gt;
+              &lt;td&gt;Henry@hotmail.com&lt;/td&gt;
+              &lt;td&gt;23&lt;/td&gt;
+              &lt;td&gt;Junior Developer&lt;/td&gt;
+              &lt;td&gt;£15.000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Lizzie&lt;/td&gt;
+              &lt;td&gt;Lizzie.Rascal@gmail.com&lt;/td&gt;
+              &lt;td&gt;32&lt;/td&gt;
+              &lt;td&gt;Manager&lt;/td&gt;
+              &lt;td&gt;£50.000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Edward&lt;/td&gt;
+              &lt;td&gt;edward.silva@hotmail.com&lt;/td&gt;
+              &lt;td&gt;20&lt;/td&gt;
+              &lt;td&gt;Intern&lt;/td&gt;
+              &lt;td&gt;£500&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+          &lt;tfoot&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;£87.500&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tfoot&gt;
+        &lt;/table&gt;
+      </code></pre>
+
+      <div>
+        <div class="card flex flex-center">
+          <table>
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>age</th>
+                <th>role</th>
+                <th>earnings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sepp</td>
+                <td>info@builtbysepp.dev</td>
+                <td>33</td>
+                <td>Senior Developer</td>
+                <td>£22.000</td>
+              </tr>
+              <tr>
+                <td>Henry</td>
+                <td>Henry@hotmail.com</td>
+                <td>23</td>
+                <td>Junior Developer</td>
+                <td>£15.000</td>
+              </tr>
+              <tr>
+                <td>Lizzie</td>
+                <td>Lizzie.Rascal@gmail.com</td>
+                <td>32</td>
+                <td>Manager</td>
+                <td>£50.000</td>
+              </tr>
+              <tr>
+                <td>Edward</td>
+                <td>edward.silva@hotmail.com</td>
+                <td>20</td>
+                <td>Intern</td>
+                <td>£500</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>£87.500</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <hr id="cards" />
+
+      <h2 style="text-decoration: underline;">Utility Classes</h2>
+
+      <h3>Cards</h3>
+      <pre>
+          <code class="html">
+            &lt;div class="card"&gt;
+              &lt;img src="./img/placeholder-image.jpg" alt="placeholder image" /&gt;
+              &lt;h3&gt;Card&lt;/h3&gt;
+              &lt;p&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+                  deserunt rem totam nihil ad deleniti ab illo, autem sed molestias
+                  eveniet dolorem recusandae beatae veritatis error iure aperiam maiores
+                  id?
+              &lt;/p&gt;
+              &lt;button>Contact Us&lt;/button&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+      <div class="card">
+        <img src="./placeholder-image.jpg" alt="placeholder image" />
+        <h3>Card</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+          deserunt rem totam nihil ad deleniti ab illo, autem sed molestias
+          eveniet dolorem recusandae beatae veritatis error iure aperiam maiores
+          id?
+        </p>
+
+        <button>Contact Us</button>
+      </div>
+
+      <hr />
+
+      <h3>Flexbox</h3>
+
+      <pre>
+        <code class="html">
+          &lt;p>space between&lt;/p&gt;
+          &lt;div class="flex"&gt;
+            &lt;img/&gt;
+            &lt;img/&gt;
+            &lt;img/&gt;
+            &lt;img/&gt;
+          &lt;/div&gt;
+          &lt;p>space evenly&lt;/p&gt;
+          &lt;div class="flex flex-even"&gt;
+            ...
+          &lt;/div&gt;
+          &lt;p&gt;space around&lt;/p&gt;
+          &lt;div class="flex flex-around"&gt;
+            ...
+          &lt;/div&gt;
+          &lt;p>center&lt;/p&gt;
+          &lt;div class="flex flex-center"&gt;
+            ...
+          &lt;/div&gt;
+          &lt;p>start&lt;/p&gt;
+          &lt;div class="flex flex-start"&gt;
+           ...
+          &lt;/div&gt;
+          &lt;p>end&lt;/p&gt;
+          &lt;div class="flex flex-end"&gt;
+           ...
+          &lt;/div&gt;
+        </code>
+      </pre>
+
+      <div class="card">
+        <p>space between (default)</p>
+        <div class="flex">
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+        </div>
+        <p>space evenly</p>
+        <div class="flex flex-even">
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+        </div>
+        <p>space around</p>
+        <div class="flex flex-around">
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+        </div>
+        <p>center</p>
+        <div class="flex flex-center">
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+        </div>
+        <p>start</p>
+        <div class="flex flex-start">
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+        </div>
+        <p>end</p>
+        <div class="flex flex-end">
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+          <img
+            src="./placeholder-image.jpg"
+            alt="placeholder img"
+            style="width: 200px; height: 200px;"
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <h3>Grid</h3>
+      <pre>
+        <code class="html">
+          &lt;div class="card grid"&gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+              animi repellat ea molestiae provident amet neque ut, consequatur minus
+              odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+              fugiat?
+            &lt;/p&gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+              animi repellat ea molestiae provident amet neque ut, consequatur minus
+              odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+              fugiat?
+            &lt;/p&gt;
+            &lt;p class="stretch"&gt;
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+              animi repellat ea molestiae provident amet neque ut, consequatur minus
+              odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+              fugiat?
+            &lt;/p&gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+              animi repellat ea molestiae provident amet neque ut, consequatur minus
+              odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+              fugiat?
+            &lt;/p&gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+              animi repellat ea molestiae provident amet neque ut, consequatur minus
+              odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+              fugiat?
+            &lt;/p&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
+      <div class="card grid">
+        <p class="card" style="box-shadow: var(--shadow-3);">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+          animi repellat ea molestiae provident amet neque ut, consequatur minus
+          odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+          fugiat?
+        </p>
+        <p class="card" style="box-shadow: var(--shadow-3);">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+          animi repellat ea molestiae provident amet neque ut, consequatur minus
+          odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+          fugiat?
+        </p>
+        <p class="card stretch" style="box-shadow: var(--shadow-3);">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+          animi repellat ea molestiae provident amet neque ut, consequatur minus
+          odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+          fugiat?
+        </p>
+        <p class="card" style="box-shadow: var(--shadow-3);">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+          animi repellat ea molestiae provident amet neque ut, consequatur minus
+          odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+          fugiat?
+        </p>
+        <p class="card" style="box-shadow: var(--shadow-3);">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ab
+          animi repellat ea molestiae provident amet neque ut, consequatur minus
+          odit harum corrupti. Veritatis atque eius suscipit accusantium, ipsa
+          fugiat?
+        </p>
+      </div>
+
+      <hr />
+      <h3>Auto-Grid</h3>
+
+      <pre>
+        <code class="html">
+        &lt;div class="card auto-grid"&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+
+      <div class="card auto-grid">
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos minus natus impedit modi quibusdam recusandae.
+        </div>
+      </div>
+
+      <hr />
+
+      <h3>Layout</h3>
+      for use with sticky header, offsets padding my size of header
+    </main>
+    <footer id="footer">
+      <h3 class="fake-logo">Fake Logo</h3>
+      <nav>
+        <a href="#">Navigation</a>
+        <a href="#">Text and Links</a>
+        <a href="#headings">Headings</a>
+        <a href="#blockquote">Blockquotes</a>
+        <a href="#lists">Lists</a>
+        <a href="#cards">Cards</a>
+        <a href="#forms">Forms</a>
+        <a href="#footer">Footer</a>
+      </nav>
+      <p>&copy; 2020 Phl3bas</p>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+
+    <script>
+      const light = document.getElementById('light');
+      const dark = document.getElementById('dark');
+      const stylesheets = document.querySelectorAll("[rel='stylesheet']");
+      const styles = document.getElementById('styles');
+
+      const btns = [light, dark, styles];
+
+      light.style.fill = 'yellow';
+      dark.style.fill = 'gray';
+
+      function clickhandler(event) {
+        switch (event.target.id) {
+          case 'light':
+            light.style.fill = 'yellow';
+            dark.style.fill = 'gray';
+            document.body.classList.remove('dark');
+            break;
+          case 'dark':
+            light.style.fill = 'gray';
+            dark.style.fill = 'royalblue';
+            document.body.classList.add('dark');
+            break;
+          case 'styles':
+            if (stylesheets[0].disabled) {
+              styles.innerText = 'Remove Matcha';
+            } else {
+              styles.innerText = 'Add Matcha';
+            }
+            stylesheets.forEach((s) => {
+              s.disabled ? (s.disabled = false) : (s.disabled = true);
+            });
+          default:
+            return;
+        }
+      }
+
+      btns.forEach((btn) => {
+        btn.addEventListener('click', clickhandler);
+      });
+
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>

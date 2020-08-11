@@ -1,0 +1,14 @@
+@mixin Fonts {
+  --headingFont: 'Dosis', sans-serif;
+  --bodyFont: 'Open Sans', sans-serif;
+  --baseFontSize: 100%;
+}
+
+@mixin Headings {
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.173em;
+  --smallText: 0.8em;
+}

@@ -1,0 +1,12 @@
+p,
+blockquote {
+  & a {
+    color: var(--linkColor);
+    text-decoration: none;
+    border-bottom: 2px dashed var(--linkColor);
+  }
+
+  & a:visited {
+    --linkColor: var(--red);
+  }
+}

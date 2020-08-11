@@ -1,0 +1,25 @@
+@mixin Colors {
+  /* Shades */
+  --pureBlack: #000;
+  --black: #333;
+  --darkerGray: #383838;
+  --darkGray: #777777;
+  --gray: #bfbfbf;
+  --default: #d4d4d4;
+  --lightGray: #eeeeee;
+  --white: #f6f6f6;
+  --pureWhite: #ffffff;
+
+  /* Colors */
+  --green: #60b385;
+  --lightGreen: #62bdbd;
+  --orange: #daa520;
+  --yellow: #eeee88;
+  --lightRed: #ff7948;
+  --red: #dd5b2c;
+  --darkRed: #9b3b18;
+  --lightBlue: #87ceeb;
+  --blue: #304fac;
+  --darkBlue: #323b55;
+  --darkerBlue: #23293a;
+}

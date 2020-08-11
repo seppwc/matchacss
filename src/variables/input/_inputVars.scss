@@ -1,0 +1,4 @@
+@mixin Input {
+  --inputHighlight: 0 0 3px var(--info), 0 0 10px 0 var(--lightBlue);
+  --inputRadius: clamp(0px, var(--radius), 8px);
+}

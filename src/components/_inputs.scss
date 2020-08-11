@@ -1,0 +1,70 @@
+input,
+textarea,
+select {
+  padding: 0.3em 0.5em;
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--inputRadius);
+  transition: box-shadow 200ms ease;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  box-shadow: var(--inputHighlight);
+}
+
+::placeholder {
+  color: var(--darkGray);
+}
+
+input[type='submit'],
+button {
+  --buttonBG: var(--buttonBackground);
+
+  width: auto;
+  appearance: none;
+  color: var(--btnTextColor);
+  text-transform: uppercase;
+  background-color: var(--buttonBG);
+  border: none;
+  padding: var(--buttonPadding);
+  border-radius: 3px;
+  box-shadow: var(--shadow-2);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+  margin: 3px;
+
+  &:hover:not(:disabled) {
+    box-shadow: var(--shadow-4);
+  }
+
+  &:active {
+    transform: translateY(0px);
+    box-shadow: var(--shadow-1);
+  }
+
+  $states: 'primary', 'cancel', 'info', 'success', 'danger', 'attention';
+
+  @each $state in $states {
+    &[data-#{$state}] {
+      --buttonBG: var(--#{$state});
+      --btnTextColor: var(--lightGray);
+    }
+  }
+
+  &:disabled {
+    --buttonBG: var(--gray);
+    opacity: 0.6;
+    box-shadow: var(--shadow-1);
+  }
+
+  &[data-small] {
+    font-size: var(--smallText);
+    --buttonPadding: 5px 2px;
+  }
+}

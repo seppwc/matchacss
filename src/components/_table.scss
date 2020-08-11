@@ -1,0 +1,44 @@
+table,
+thead,
+tfoot th,
+tr,
+td {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  min-width: 500px;
+  text-align: center;
+  border-radius: var(--tableRadius);
+  color: var(--black);
+  overflow: hidden;
+
+  & tfoot {
+    background: var(--tableFootBackground);
+
+    & td {
+      padding: 10px;
+    }
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--tableBackgroundAlt);
+  }
+
+  tbody tr:nth-child(odd) {
+    background: var(--tableBackground);
+  }
+  & td {
+    padding: 10px;
+  }
+
+  & thead {
+    background: var(--tableHeadBackground);
+
+    & th {
+      padding: 10px;
+      text-transform: uppercase;
+    }
+  }
+}

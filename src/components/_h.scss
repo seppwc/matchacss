@@ -1,0 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-top: 0;
+}
+
+@for $i from 1 to 6 {
+  h#{$i} {
+    font-size: var(--h#{$i});
+  }
+}

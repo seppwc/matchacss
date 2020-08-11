@@ -1,0 +1,8 @@
+@mixin ColorIntentions {
+  --primary: var(--lightGreen);
+  --danger: var(--red);
+  --cancel: var(--lightRed);
+  --attention: var(--orange);
+  --success: var(--green);
+  --info: var(--blue);
+}

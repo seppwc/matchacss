@@ -1,0 +1,22 @@
+blockquote {
+  --sideColor: var(--info);
+
+  margin: 2em 0;
+  padding: 2em;
+  border-radius: var(--radius);
+  background: var(--cardBg);
+  position: relative;
+  max-width: 700px;
+  box-shadow: var(--shadow-3);
+  font-style: italic;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1.2%;
+    background: var(--sideColor);
+    top: 0;
+    left: 0;
+  }
+}

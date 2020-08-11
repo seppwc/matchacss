@@ -1,0 +1,20 @@
+footer {
+  --footerTextColor: var(--lightGray);
+  text-align: center;
+  color: var(--footerTextColor);
+  background: var(--headerBackground);
+  padding: 3rem var(--containerPadding);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1), 0 -6px 26px rgba(0, 0, 0, 0.3);
+
+  & a {
+    color: var(--lightGreen);
+    margin: 0 10px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--lightGreen);
+  }
+
+  & p {
+    margin-bottom: 0;
+    max-width: none;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin Table {
+  --tableHeadBackground: var(--gray);
+  --tableFootBackground: var(--default);
+  --tableBackground: var(--white);
+  --tableBackgroundAlt: var(--lightGray);
+  --tableRadius: clamp(0px, var(--radius), 20px);
+}

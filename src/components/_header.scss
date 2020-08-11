@@ -1,0 +1,43 @@
+header {
+  background: var(--headerBackground);
+  display: block;
+  box-shadow: var(--shadow-3);
+  color: var(--lightGray);
+  text-align: center;
+  padding: 5px var(--containerPadding);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  & h1 {
+    color: var(--white);
+    font-family: var(--bodyFont);
+    font-size: var(--baseFontSize);
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  nav a + a {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  :root {
+    --baseFontSize: 112.5%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--headerHeight);
+  }
+}
