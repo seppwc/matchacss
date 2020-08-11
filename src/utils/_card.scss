@@ -1,9 +1,10 @@
 .card {
+  --cardShadow: var(--shadow-4);
   margin: 5px;
   padding: 2em;
   border-radius: var(--radius);
   background: var(--cardBackground);
-  box-shadow: var(--shadow-4);
+  box-shadow: var(--cardShadow);
 }
 
 .card > *:first-child {
