@@ -1,0 +1,10 @@
+.dark {
+  --background: var(--darkerBlue);
+  --textColor: var(--white);
+  --headerBackground: var(--black);
+  --cardBg: var(--darkBlue);
+  --btnTextColor: var(--black);
+  --inputHighlight: 0 0 1px 4px var(--red), 0 0 10px 1px var(--red);
+}
+
+/*# sourceMappingURL=dark.css.map */
