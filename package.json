@@ -10,8 +10,8 @@
     "themes/dark.css.map"
   ],
   "scripts": {
-    "build": "sass src/index.scss dist/macha.css",
-    "build:watch": "sass --watch src/index.scss dist/macha.css",
+    "build": "sass --no-source-map src/index.scss dist/macha.css",
+    "build:watch": "sass --no-source-map --watch src/index.scss dist/macha.css",
     "build:themes": "node ./scripts/buildthemes.js",
     "build:all": "npm run build && npm run build:themes",
     "prebuild": "rimraf dist"
