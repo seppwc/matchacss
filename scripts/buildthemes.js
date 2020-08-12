@@ -19,6 +19,6 @@ fs.readdir(path.join(__dirname, '..', 'src/themes'), (err, files) => {
       path.join(__dirname, '..', 'dist/themes', f.split('.')[0] + '.css')
     );
 
-    const child = spawn('sass', [srcPath, distPath]);
+    const child = spawn('sass', ['--no-source-map', srcPath, distPath]);
   });
 });
