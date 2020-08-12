@@ -11,10 +11,13 @@
     <meta property="og:image" content="" />
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="./assets/matchasm.png" />
+    <link rel="icon" href="./assets/matchasm.png" type="image/x-icon" />
 
+    <!-- Uncomment below this link for testing styles -->
     <!-- <link rel="stylesheet" href="../dist/macha.css" /> -->
+    <!-- Uncomment above this link for testing styles -->
+
     <link rel="stylesheet" href="https://unpkg.com/matchacss" />
     <link rel="stylesheet" href="https://unpkg.com/matchacss/theme/dark.css" />
     <link
@@ -22,14 +25,30 @@
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/ocean.min.css"
     />
     <meta name="theme-color" content="#fafafa" />
-    <title>Matcha - Examples</title>
-
-    <style></style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>MatchaCSS</title>
   </head>
 
   <body>
     <header id="navigation">
-      <h1 class="fake-logo">Matcha</h1>
+      <h1
+        style="
+          font-size: 1.4rem;
+
+          font-family: 'Lobster Two', cursive;
+        "
+      >
+        <img
+          src="./assets/matchasm.png"
+          alt="matcha"
+          width="40px"
+          height="40px"
+        />
+        MatchaCSS
+      </h1>
       <nav>
         <a href="/https://phl3bas.github.io/MatchaCSS/">Home</a>
         <a href="https://github.com/Phl3bas/MatchaCSS">Github</a>
@@ -114,9 +133,20 @@
     </header>
 
     <main class="layout">
-      <h2>Matcha</h2>
-
-      <h3>Minimal CSS Design System</h3>
+      <img
+        style="
+          display: block;
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+          width: 20%;
+          min-width: 200px;
+          padding-top: 2vh;
+        "
+        src="./assets/matchalogo.png"
+        alt="matchacss"
+      />
+      <h3>Minimal CSS Framework/Design System</h3>
 
       <p>
         Matcha is a minimal CSS design system and framework to try and influence
