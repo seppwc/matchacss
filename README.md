@@ -150,9 +150,11 @@ form elements styles have been normalized, input["submit"] are styled the same a
 
 While MatchaCSS is mostly classless, it does provide some utility classes to create some components which aren't naturally comparable to basic HTML elements (e.g cards) or to provide some basic positioning using flexbox and grid, these are usually used with div's as they have no naturally styling of their own.
 
+NB: basic grids are not resposive as of v0.0.7 (feel free to make a pull request!)
+
 ```html
-// card components create an element with some padding and box shadow around
-child elements, images will default to 100% width of the card and object-fit
+// card components create an element with some padding child elements and a box
+shadow, images will default to 100% width of the card and object-fit
 <div class="card">Card Component</div>
 
 // grid element (defaults to two column grid)
@@ -185,6 +187,10 @@ Check out our [examples page](https://phl3bas.github.io/MatchaCSS/) to see some 
 
 ## Contributing
 
-We are open to contributors at any level, the framework is built using SASS so a basic understanding of sass is prefererable (but not neccessary!). its a bit wild west at the moment but if you have any ideas message me on twitter @phl3bas or make a issue and we can move forward from there.
+We are open to contributors at any level, the framework is built using SASS so a basic understanding of sass is prefererable (but not neccessary!). its a bit wild west at the moment but if you have any ideas or queriers about design choices message me on twitter @phl3bas or make a issue and we can move forward from there.
 
-t
+### _cheers_
+
+Sepp Wikramaratna-Clarke _(twitter: @Ph3lbas)_
+
+_MachtaCSS Creator_
