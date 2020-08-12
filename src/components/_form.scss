@@ -3,5 +3,10 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  padding: 0.4rem;
+  padding: 0.4em;
+}
+
+fieldset {
+  margin-bottom: 0.5em;
+  margin-right: 1.2em;
 }
