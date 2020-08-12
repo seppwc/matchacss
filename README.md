@@ -18,7 +18,7 @@ Matcha is designed for quick prototyping and extendibility, either write your ow
 
 ```bash
     npm install matchacss
-    yarn install matchacss
+    yarn add matchacss
 ```
 
 and then either link to the stylesheet in your html
