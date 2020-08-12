@@ -7,10 +7,10 @@ footer {
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1), 0 -6px 26px rgba(0, 0, 0, 0.3);
 
   & a {
-    color: var(--lightGreen);
+    color: var(--primary);
     margin: 0 10px;
     text-decoration: none;
-    border-bottom: 1px solid var(--lightGreen);
+    border-bottom: 1px solid var(--primary);
   }
 
   & p {
