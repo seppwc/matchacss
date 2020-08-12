@@ -146,9 +146,9 @@ elements that make use of color intensions (e.g buttons) will be able to define 
 
 form elements styles have been normalized, input["submit"] are styled the same as normal buttons and text inputs and textareas share similar styling by default. labels are now display block to conform with best practice of having labels above the input theyre a label for, and placeholders are given better padding and colouring. Wrap grouped elements in fieldsets for best results.
 
-## well... 95% Classless...
+## ok well...its 95% Classless...
 
-While MatchaCSS is mostly classes, it does provide some utility classes to create some components which aren't naturally comparable to basic HTML elements (e.g cards) or to provide some basic positioning using flexbox and grid, these are usually used with div's as they have no naturally styling of their own.
+While MatchaCSS is mostly classless, it does provide some utility classes to create some components which aren't naturally comparable to basic HTML elements (e.g cards) or to provide some basic positioning using flexbox and grid, these are usually used with div's as they have no naturally styling of their own.
 
 ```html
 // card components create an element with some padding and box shadow around
