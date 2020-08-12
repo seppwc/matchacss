@@ -29,7 +29,7 @@ button {
   appearance: none;
   color: var(--btnTextColor);
   text-transform: uppercase;
-  background-color: var(--buttonBG);
+  background-color: var(--btnBackground);
   border: none;
   padding: var(--btnPadding);
   border-radius: 3px;
@@ -63,6 +63,6 @@ button {
 
   &[data-small] {
     font-size: var(--smallText);
-    --buttonPadding: 5px 2px;
+    --btnPadding: 5px 2px;
   }
 }
