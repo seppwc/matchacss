@@ -150,7 +150,7 @@ form elements styles have been normalized, input["submit"] are styled the same a
 
 While MatchaCSS is mostly classless, it does provide some utility classes to create some components which aren't naturally comparable to basic HTML elements (e.g cards) or to provide some basic positioning using flexbox and grid, these are usually used with div's as they have no naturally styling of their own.
 
-NB: basic grids are not resposive as of v0.0.7 (feel free to make a pull request!)
+NB: basic grids are not resposive as of v0.0.8 (feel free to make a pull request!)
 
 ```html
 // card components create an element with some padding child elements and a box
