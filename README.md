@@ -193,4 +193,4 @@ We are open to contributors at any level, the framework is built using SASS so a
 
 Sepp Wikramaratna-Clarke _(twitter: @Ph3lbas)_
 
-_MachtaCSS Creator_
+_MatchaCSS Creator_
