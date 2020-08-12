@@ -25,7 +25,7 @@ and then either link to the stylesheet in your html
 
 ```html
 <link rel="stylesheet" href="node_modules/matchacss/matcha.css" />
-<link rel="stylesheet" href="node_modules/matchacss/theme/dark.css" />
+<link rel="stylesheet" href="node_modules/matchacss/themes/dark.css" />
 ```
 
 or in your JS file and let your bundler do the work
@@ -35,7 +35,7 @@ or in your JS file and let your bundler do the work
 import 'matchacss';
 
 // import a theme
-import 'matchacss/theme/dark.css';
+import 'matchacss/themes/dark.css';
 ```
 
 2. via cdn
@@ -47,7 +47,7 @@ import 'matchacss/theme/dark.css';
 // to include a specific theme include this below the base package link
 <link
   rel="stylesheet"
-  href="https://unpkg.com/matchacss/theme/<THEME_NAME>.css"
+  href="https://unpkg.com/matchacss/themes/<THEME_NAME>.css"
 />
 ```
 
