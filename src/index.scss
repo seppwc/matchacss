@@ -1,6 +1,7 @@
 // Vendors
 @use './vendor/normalize';
 @use './vendor/boilerplate';
+@use './vendor/defaultFonts';
 
 // Variables
 @use './variables/variables';
@@ -11,3 +12,6 @@
 // Utils
 
 @use './utils/utils';
+
+@include defaultFonts.google-fonts('Dosis');
+@include defaultFonts.google-fonts('Open+Sans');
