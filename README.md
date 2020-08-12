@@ -187,7 +187,20 @@ Check out our [examples page](https://phl3bas.github.io/MatchaCSS/) to see some 
 
 ## Contributing
 
-We are open to contributors at any level, the framework is built using SASS so a basic understanding of sass is prefererable (but not neccessary!). its a bit wild west at the moment but if you have any ideas or queriers about design choices message me on twitter @phl3bas or make a issue and we can move forward from there.
+We are open to contributors at any level.
+
+The framework is built using SASS so a basic understanding of sass is prefererable (but not neccessary!) its purely CSS not javascript! I will be planning on creating Web Components for things like carosels, model viewers, nav bars and draws which will be used instead of adding a js file!.
+
+The project at the moment is a bit wild west-y but if you have any ideas for the project or queries about design choices message me on twitter @phl3bas or make a issue and we can move forward from there.
+
+elements not yet styled:
+
+- abbr
+- address
+- summary
+- any others im not aware of feel free to make an issue.
+
+also some default responsiveness might be inorder (although ideally we're trying to style these without media queries where possible)
 
 ### _cheers_
 
